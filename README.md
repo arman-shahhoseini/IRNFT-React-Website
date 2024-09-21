@@ -1,19 +1,20 @@
 # IRNFT
 
-**IRNFT** is a modern and captivating web application designed for showcasing and trading digital art and NFTs. Built with React, it provides a seamless and intuitive user experience that brings art to life.
+**IRNFT**: A modern platform for showcasing and trading digital art and NFTs. Built with React, it provides a seamless, intuitive user experience that brings art to life.
 
 ## 🌟 Features
 
-- **Responsive Design**: Optimized for all devices and screen sizes, ensuring accessibility on any platform.
-- **User Profiles**: Manage your profile and easily view your art collections and activity.
-- **Explore Section**: Discover and browse new art pieces with an intuitive interface.
-- **Help Center & Resources**: Access comprehensive support and helpful information at your fingertips.
+- **Responsive Design**: Optimized for all devices and screen sizes for universal accessibility.
+- **User Profiles**: Manage profiles and view collections and activity.
+- **Explore Section**: Easily discover new art pieces in an intuitive interface.
+- **NFT Wallet Integration**: Connect your wallet to manage and trade NFTs effortlessly.
+- **Help Center & Resources**: Comprehensive support and helpful information at your fingertips.
 
 ## 🚀 Getting Started
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/yourusername/IRNFT.git
+   git clone https://github.com/arman-shahhoseini/IRNFT-React-Website.git
    ```
 
 2. **Navigate to the Project Directory**:
@@ -31,11 +32,18 @@
    npm start
    ```
 
+5. **Configure Environment**: (if necessary, add details about .env files or configurations).
+
 ## 🛠️ Technologies Used
 
 - **React**: For building a dynamic and interactive user interface.
-- **React Router**: For efficient routing and navigation throughout the application.
-- **Font Awesome**: For sleek and visually appealing icons.
+- **React Router**: For efficient routing and navigation.
+- **Font Awesome**: For sleek icons.
+
+## 🤝 Contributing
+
+Contributions are welcome! Please open an issue or submit a pull request.
+
 
 ## 📞 Created By
 
