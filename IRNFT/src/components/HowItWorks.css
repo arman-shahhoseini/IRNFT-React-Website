@@ -1,0 +1,81 @@
+.how-it-works {
+    text-align: center;
+    padding: 60px 0;
+    background-color: #1b1b2f;
+    color: #ffffff;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .how-it-works h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    position: relative;
+    display: inline-block;
+  }
+  
+  .how-it-works h2::after {
+    content: '';
+    width: 50px;
+    height: 4px;
+    background-color: #772CE8;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .how-it-works p {
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+    color: #BBBBBB;
+  }
+  
+  .steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    padding: 20px 0;
+  }
+  
+  .steps .step {
+    background-color: #2E2E30;
+    padding: 25px;
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .steps .step:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+  }
+  
+  .steps h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #ffcc00;
+  }
+  
+  .steps p {
+    font-size: 1rem;
+    color: #CCCCCC;
+  }
+  
+/* Media Queries */
+@media (max-width: 768px) {
+  .how-it-works h2 {
+    font-size: 2rem; /* کاهش اندازه عنوان */
+  }
+
+  .how-it-works p {
+    font-size: 1rem; /* کاهش اندازه متن */
+  }
+
+  .steps {
+    padding: 10px 0; /* کاهش padding */
+  }
+
+  .steps .step {
+    padding: 20px; /* کاهش padding داخلی */
+  }
+}

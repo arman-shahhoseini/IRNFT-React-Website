@@ -1,0 +1,135 @@
+/* Coming Soon Page Styles */
+.coming-soon-container {
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    box-sizing: border-box;
+}
+
+.coming-soon-container #myVideo {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    object-fit: cover;
+}
+
+.coming-soon-container .content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 3rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.coming-soon-container h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    color: #FF6F61;
+}
+
+.coming-soon-container p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.coming-soon-container .btn {
+    display: inline-block;
+    background-color: #FF6F61;
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-size: 1.1rem;
+    margin: 0.5rem;
+    min-width: 200px;
+}
+
+.coming-soon-container .btn:hover {
+    background-color: #FF4C3B;
+    transform: translateY(-2px);
+}
+
+/* Responsive Styles for Coming Soon Page */
+@media (max-width: 768px) {
+    .coming-soon-container .content {
+        padding: 2rem;
+    }
+
+    .coming-soon-container h1 {
+        font-size: 2.5rem;
+    }
+
+    .coming-soon-container p {
+        font-size: 1rem;
+    }
+
+    .coming-soon-container .btn {
+        width: 100%;
+        max-width: 300px;
+        margin: 0.5rem 0;
+    }
+}
+
+/* استایل‌های عمومی برای موبایل */
+@media (max-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+
+    .content, .features, .nft-section {
+        padding: 1rem;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    /* بهبود نمایش دکمه‌ها */
+    .btn {
+        font-size: 1rem;
+        padding: 0.8rem 1.5rem;
+        width: 80%;
+        max-width: 250px;
+        margin: 0.5rem auto;
+    }
+
+    .coming-soon-container .content {
+        padding: 1.5rem;
+        width: 90%;
+        max-width: 400px;
+    }
+}
+
+/* استایل‌های خاص برای دستگاه‌های با صفحه نمایش عمودی */
+@media (max-width: 768px) and (orientation: portrait) {
+    .coming-soon-container .btn {
+        width: 70%;
+        max-width: 200px;
+    }
+
+    .coming-soon-container .content {
+        padding: 1rem;
+        width: 85%;
+        max-width: 350px;
+    }
+}

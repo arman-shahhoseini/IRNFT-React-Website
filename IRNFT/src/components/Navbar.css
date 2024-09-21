@@ -1,0 +1,175 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #0d0d0d;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: #1a1a1a;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Adds a shadow for depth */
+    transition: background-color 0.3s ease;
+}
+
+.navbar.scrolled {
+    background-color: #0d0d0d; /* Darker background on scroll */
+}
+
+/* Container */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Logo Styling */
+.logo img {
+    width: 150px; /* Adjust the width to fit the design */
+    height: auto;
+    margin-top: 10px;
+    margin-right: -55px;
+}
+
+/* Navigation Links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px; /* More gap between items for better spacing */
+    margin-left: 110px;
+}
+
+.nav-links li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500; /* Makes the font a bit bolder */
+    padding: 5px 0;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+    position: relative;
+}
+
+.nav-links li a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #9b59b6; /* Underline color on hover */
+    transition: width 0.3s ease;
+}
+
+.nav-links li a:hover::before {
+    width: 100%;
+}
+
+.nav-links li a:hover {
+    color: #9b59b6; /* Purple color on hover */
+}
+
+/* Navbar Buttons */
+.nav-buttons {
+    display: flex;
+    gap: 15px; /* More space between buttons */
+}
+
+.search-btn,
+.explore-btn {
+    background: transparent;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    padding: 8px 16px;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 20px; /* Adds a rounder shape to the buttons */
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.search-btn:hover,
+.explore-btn:hover {
+    background-color: #9b59b6; /* Matching the purple theme */
+    border-color: #9b59b6;
+}
+
+.explore-btn {
+    background-color: #9b59b6;
+    border: none;
+    color: #ffffff;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none; /* Hide links on smaller screens */
+    }
+
+    .nav-buttons {
+        gap: 5px; /* Reduce space between buttons */
+    }
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none; /* پنهان کردن لینک‌ها در صفحه‌های کوچک */
+        flex-direction: column; /* نمایش به صورت ستونی */
+        position: absolute; /* قرارگیری مطلق */
+        top: 60px; /* فاصله از بالای نوار */
+        left: 0; /* شروع از سمت چپ */
+        background-color: #1a1a1a; /* پس‌زمینه نوار */
+        width: 100%; /* عرض کامل */
+        z-index: 999; /* جلوتر از سایر عناصر */
+        padding: 10px 0; /* فضای داخلی */
+    }
+
+    .nav-links.active {
+        display: flex; /* نمایش لینک‌ها در حالت فعال */
+    }
+
+    .nav-buttons {
+        display: none; /* پنهان کردن دکمه‌ها در صفحه‌های کوچک */
+    }
+
+    .toggle-btn {
+        display: block; /* نمایش دکمه منو */
+        background: transparent;
+        border: none;
+        color: #ffffff;
+        font-size: 32px;
+        cursor: pointer;
+        margin-left: 250px;
+    }
+
+    .logo img {
+        width: 120px; /* کاهش اندازه لوگو */
+    }
+}
+
+/* دکمه Toggle */
+.toggle-btn {
+    display: none; /* پنهان کردن دکمه Toggle در صفحه‌های بزرگ */
+}
+
+@media (max-width: 768px) {
+    .toggle-btn {
+        display: block; /* نمایش دکمه Toggle در صفحه‌های کوچک */
+    }
+}

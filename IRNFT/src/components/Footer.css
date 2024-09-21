@@ -1,0 +1,60 @@
+footer {
+    background-color: #1A1A1D;
+    padding: 60px 20px;
+    text-align: center;
+    color: white;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .footer-columns {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 30px;
+    margin-bottom: 40px;
+  }
+  
+  .footer-columns .column h4 {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    color: #ffcc00;
+  }
+  
+  .footer-columns .column ul {
+    list-style: none;
+  }
+  
+  .footer-columns .column ul li {
+    margin-bottom: 10px;
+    font-size: 1rem;
+    color: #BBBBBB;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-columns .column ul li:hover {
+    color: #ffffff;
+  }
+  
+  footer p {
+    margin-top: 30px;
+    font-size: 0.9rem;
+    color: #BBBBBB;
+  }
+  
+  .footer-social {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.footer-social a {
+    color: #ffffff;
+    font-size: 1.5rem; /* اندازه آیکون */
+    margin: 0 10px; /* فاصله بین آیکون‌ها */
+    transition: color 0.3s ease;
+}
+
+.footer-social a:hover {
+    color: #ffcc00; /* رنگ هاور */
+}

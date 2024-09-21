@@ -1,0 +1,231 @@
+.landing {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 20px;
+  background: url('../assets/landing-img.jpeg') no-repeat center center/cover;
+  color: #ffffff;
+  position: relative;
+  width: 100%; /* تطبیق با اندازه صفحه */
+  height: 684px;
+  margin-top: 120px;
+  overflow: hidden; /* پنهان کردن عناصر اضافی */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* سایه جذاب */
+}
+
+.landing-content {
+  max-width: 50%;
+  animation: fadeInLeft 1s ease-in-out; /* انیمیشن ورود محتوا */
+}
+
+.landing h1 {
+  font-size: 56px; /* افزایش اندازه فونت برای تاکید بیشتر */
+  font-weight: bold;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* سایه متن جذاب */
+}
+
+.landing p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  color: #e0e0e0;
+}
+
+.buttons {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 40px;
+}
+
+.explore-btn, .create-btn {
+  padding: 12px 30px;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px; /* گرد کردن گوشه‌ها */
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* سایه دکمه‌ها */
+}
+
+.explore-btn {
+  background-color: #9b59b6;
+  color: #ffffff;
+}
+
+.explore-btn:hover {
+  background-color: #8e44ad; /* تغییر رنگ هنگام هاور */
+  transform: scale(1.05); /* بزرگنمایی هنگام هاور */
+}
+
+.create-btn {
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+}
+
+.create-btn:hover {
+  background-color: #ffffff;
+  color: #0d0d0d;
+  transform: scale(1.05);
+}
+
+.stats {
+  display: flex;
+  margin-top: 40px;
+  animation: fadeInUp 1s ease-in-out;
+}
+
+.stat {
+  text-align: center;
+  background: rgba(0, 0, 0, 0.5); /* پس‌زمینه شفاف */
+  padding: 10px 20px;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+  margin-left: 65px;
+}
+
+.stat:hover {
+  transform: translateY(-10px); /* حرکت بالا هنگام هاور */
+}
+
+.stat span {
+  display: block;
+  font-size: 28px;
+  font-weight: bold;
+  color: #ffcc00; /* رنگ طلایی برای تاکید بیشتر */
+  margin-top: 10px;
+}
+
+.auction-info {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background: rgba(50, 50, 50, 0.9); /* تغییر رنگ پس‌زمینه به مشکی شفاف */
+  backdrop-filter: blur(8px); /* افکت بلور */
+  padding: 25px;
+  border-radius: 12px;
+  display: flex;
+  gap: 30px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7); /* سایه قوی‌تر */
+  animation: fadeInRight 1s ease-in-out; /* انیمیشن ورود */
+}
+
+.bid-info, .auction-timer, .bid-actions {
+  text-align: center;
+}
+
+.bid-info h2 {
+  font-size: 20px;
+  color: #ffcc00; /* رنگ طلایی */
+}
+
+.bid-info p {
+  font-size: 26px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.bid-info span {
+  font-size: 14px;
+  color: #cccccc;
+}
+
+.auction-timer p {
+  font-size: 16px;
+  color: #ffcc00;
+}
+
+.timer span {
+  font-size: 22px;
+  font-weight: bold;
+  padding: 0 5px;
+  color: #ffcc00;
+}
+
+.bid-now-btn {
+  margin-right: 10px;
+}
+
+.bid-now-btn, .see-item-btn {
+  padding: 12px 20px;
+  background-color: #ffcc00;
+  color: #0d0d0d;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.bid-now-btn:hover, .see-item-btn:hover {
+  background-color: #ffffff;
+  color: #0d0d0d;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .landing {
+      flex-direction: column; /* تغییر به حالت ستونی */
+      padding: 40px 20px; /* کاهش فضای داخلی */
+      height: auto; /* ارتفاع خودکار */
+  }
+
+  .landing-content {
+      max-width: 100%; /* عرض کامل */
+      text-align: center; /* متن وسط چین */
+  }
+
+  .stats {
+      flex-direction: column; /* تغییر به حالت ستونی */
+      align-items: center; /* وسط چین کردن */
+      margin-top: 20px; /* کاهش فاصله بالا */
+  }
+
+  .stat {
+      margin-left: 0; /* حذف فاصله سمت چپ */
+      margin-bottom: 15px; /* فاصله پایین */
+  }
+
+  .auction-info {
+      position: static; /* تغییر موقعیت به حالت ثابت */
+      margin-top: 20px; /* اضافه کردن فاصله بالا */
+      flex-direction: column; /* تغییر به حالت ستونی */
+      gap: 15px; /* فاصله بین عناصر */
+      width: 100%; /* عرض کامل */
+  }
+}

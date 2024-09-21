@@ -1,0 +1,162 @@
+.auction-container {
+  background-color: #1b1b2f; /* Dark background */
+  color: white;
+  padding: 30px; /* Increased padding for better spacing */
+  text-align: center;
+  border-radius: 20px; /* More rounded corners */
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.7); /* Deeper shadow for depth */
+  transition: transform 0.3s ease; /* Add hover scaling effect */
+}
+
+.auction-container:hover {
+  transform: scale(1.02); /* Slight scale up on hover */
+}
+
+.auction-container h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #eee; /* Bright yellow for the title */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Subtle text shadow */
+}
+
+.slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden; /* Hide overflow for a cleaner look */
+}
+
+.card {
+  background-color: #1c1c1e; /* Card background */
+  border-radius: 15px;
+  padding: 20px; /* Increased padding for more space */
+  width: 320px; /* Slightly wider for more content */
+  text-align: left;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6); /* Stronger shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Added shadow transition */
+  position: relative; /* Allow for pseudo-elements */
+}
+
+.card:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.8); /* Stronger shadow on hover */
+}
+
+.card h3 {
+  font-size: 22px; /* Increased title size */
+  margin-bottom: 5px;
+  color: #ffcc00; /* Bright color for title */
+}
+
+.card p {
+  font-size: 14px;
+  color: #b3b3b3;
+}
+
+.price-section {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+.price-section .eth-price {
+  font-weight: bold;
+  color: #ffcc00; /* Bright yellow for price */
+  font-size: 16px; /* Slightly larger for emphasis */
+}
+
+.price-section .stock {
+  color: #7f7f7f;
+  font-size: 12px;
+}
+
+.highest-bid {
+  color: #b3b3b3; /* Light grey for highest bid */
+  font-size: 12px;
+}
+
+.image-wrapper {
+  position: relative;
+}
+
+.image-wrapper img {
+  width: 100%;
+  border-radius: 15px;
+  transition: transform 0.3s ease; /* Zoom effect on hover */
+}
+
+.image-wrapper img:hover {
+  transform: scale(1.05); /* Slight zoom on image hover */
+}
+
+.buttons {
+  display: flex; /* Flexbox for button alignment */
+  justify-content: center; /* Center buttons */
+  margin-top: 20px; /* Space above buttons */
+}
+
+.buttons button {
+  padding: 10px 20px; /* Increased padding for better touch target */
+  border: none;
+  border-radius: 10px;
+  background-color: #800080; /* Purple Button */
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+  margin: 0 10px; /* Space between buttons */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover effect */
+}
+
+.buttons button:hover {
+  background-color: #a052be; /* Lighter purple on hover */
+  transform: translateY(-2px); /* Slight lift on hover */
+}
+
+.buttons button:last-child {
+  background-color: transparent;
+  border: 2px solid #800080; /* Stronger border for secondary button */
+  color: #800080; /* Text matches border on secondary button */
+}
+
+.prev-btn, .next-btn {
+  background-color: transparent;
+  border: none;
+  color: #ffffff;
+  font-size: 30px;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.prev-btn:hover, .next-btn:hover {
+  color: #ffcc00; /* Change color on hover */
+}
+
+.prev-btn {
+  left: 10px; /* Added space from left */
+}
+
+.next-btn {
+  right: 10px; /* Added space from right */
+}
+
+/* رسپانسیو */
+@media (max-width: 768px) {
+  .auction-container {
+    padding: 20px; /* کاهش padding */
+  }
+  .card {
+    width: 90%; /* عرض 90 درصد در صفحات کوچک */
+    padding: 15px; /* کاهش padding داخلی */
+  }
+  .buttons {
+    flex-direction: column; /* ترتیب عمودی دکمه‌ها */
+  }
+  .buttons button {
+    width: 100%; /* دکمه‌ها عرض کامل */
+    margin: 5px 0; /* فاصله عمودی */
+  }
+}
