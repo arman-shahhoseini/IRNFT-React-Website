@@ -11,7 +11,7 @@
     text-align: center;
     padding: 2rem;
     box-sizing: border-box;
-    margin-top: 110px; /* اینجا می‌توان به هدر استایل‌ها توجه کرد */
+    margin-top: 110px;
 }
 
 .get-started-container #backgroundVideo {
@@ -63,15 +63,15 @@
     margin: 0.5rem;
     min-width: 200px;
     flex: 1;
-    background-color: #FF6F61; /* رنگ پس‌زمینه */
-    color: white; /* رنگ متن */
-    box-shadow: 0 4px 6px rgba(255, 111, 97, 0.3); /* سایه */
+    background-color: #FF6F61; 
+    color: white; 
+    box-shadow: 0 4px 6px rgba(255, 111, 97, 0.3); 
 }
 
 .get-started-container .btn:hover {
-    background-color: #FF4C3B; /* رنگ پس‌زمینه در حالت هاور */
-    transform: translateY(-2px); /* افکت جابجایی */
-    box-shadow: 0 6px 8px rgba(255, 111, 97, 0.5); /* سایه در حالت هاور */
+    background-color: #FF4C3B; 
+    transform: translateY(-2px); 
+    box-shadow: 0 6px 8px rgba(255, 111, 97, 0.5); 
 }
 
 

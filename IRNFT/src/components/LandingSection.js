@@ -1,5 +1,6 @@
 import React from 'react';
-import './LandingSection.css'; // فایل CSS برای استایل‌دهی
+import './LandingSection.css'; 
+import { NavLink } from 'react-router-dom'; 
 
 const LandingSection = () => {
   return (
@@ -8,7 +9,7 @@ const LandingSection = () => {
         <h1>Discover, collect and sell dope NFTs</h1>
         <p>The IRAN digital marketplace for crypto collectibles and non-fungible tokens (NFTs)</p>
         <div className="buttons">
-          <button className="explore-btn">Explore</button>
+        <NavLink to="/get-started" className="explore-btn">Explore</NavLink>
           <button className="create-btn">Create</button>
         </div>
         <div className="stats">

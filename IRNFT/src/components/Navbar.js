@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './Navbar.css';
-import { NavLink } from 'react-router-dom'; // تغییر به NavLink
+import { NavLink } from 'react-router-dom'; 
 import Logo from '../assets/logo.png';
 
 const Navbar = () => {

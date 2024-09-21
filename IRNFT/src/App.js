@@ -18,7 +18,6 @@ import aesthetic from './assets/aesthetic.jpg';
 import wadafox from './assets/wadafox.jpg';
 import GetStarted from './components/GetStarted';
 
-
 function App() {
   return (
     <Router>

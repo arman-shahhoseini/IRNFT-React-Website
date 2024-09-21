@@ -49,20 +49,20 @@
 /* Media Queries */
 @media (max-width: 768px) {
   .cta h3 {
-    font-size: 1.5rem; /* کاهش اندازه عنوان */
+    font-size: 1.5rem; 
   }
 
   .cta p {
-    font-size: 1rem; /* کاهش اندازه متن */
+    font-size: 1rem; 
   }
 
   .cta input[type="email"] {
-    width: 100%; /* عرض 100 درصد */
-    margin-right: 0; /* حذف فاصله */
-    margin-bottom: 10px; /* فاصله پایین */
+    width: 100%; 
+    margin-right: 0; 
+    margin-bottom: 10px; 
   }
 
   .cta button {
-    width: 100%; /* دکمه عرض 100 درصد */
+    width: 100%; 
   }
 }

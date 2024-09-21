@@ -84,16 +84,29 @@
   color: #b8b8d4;
 }
 
-/* رسپانسیو */
+
 @media (max-width: 768px) {
   .top-sellers {
-    padding: 1rem; /* کاهش padding در صفحات کوچک */
+    padding: 1rem; 
+    padding-bottom: 50px;
   }
   .seller-card {
-    padding: 0.5rem; /* کاهش padding داخلی */
+    padding: 0.5rem; 
+    width: 200px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
   }
   .seller-img {
-    width: 60px; /* کاهش اندازه تصویر */
+    width: 60px; 
     height: 60px;
+  }
+  .seller-grid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
   }
 }

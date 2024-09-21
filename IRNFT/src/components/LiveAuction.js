@@ -44,7 +44,7 @@ const LiveAuction = () => {
     {
       title: "Dream Big",
       author: "by ltvrn",
-      price: "2.45",
+      price: "5.52",
       stock: "6 in stock",
       highestBid: "0.02",
       image: liveAuction2,
@@ -52,7 +52,7 @@ const LiveAuction = () => {
     {
       title: "Oddoties",
       author: "by brellas",
-      price: "2.45",
+      price: "8.00",
       stock: "8 in stock",
       highestBid: "0.026",
       image: liveAuction3,

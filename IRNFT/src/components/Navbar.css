@@ -129,27 +129,30 @@ body {
 /* Media Queries for Responsive Design */
 @media (max-width: 768px) {
     .nav-links {
-        display: none; /* پنهان کردن لینک‌ها در صفحه‌های کوچک */
-        flex-direction: column; /* نمایش به صورت ستونی */
-        position: absolute; /* قرارگیری مطلق */
-        top: 60px; /* فاصله از بالای نوار */
-        left: 0; /* شروع از سمت چپ */
-        background-color: #1a1a1a; /* پس‌زمینه نوار */
-        width: 100%; /* عرض کامل */
-        z-index: 999; /* جلوتر از سایر عناصر */
-        padding: 10px 0; /* فضای داخلی */
+        display: none; 
+        flex-direction: column; 
+        position: absolute;
+        top: 60px; 
+        left: 0; 
+        background-color: #1a1a1a; 
+        width: 100%; 
+        z-index: 999; 
+        padding: 10px 0; 
     }
 
     .nav-links.active {
-        display: flex; /* نمایش لینک‌ها در حالت فعال */
+        display: flex; 
+        text-align: center;
+        margin-top: 45px;
+        margin-left: -10px;
     }
 
     .nav-buttons {
-        display: none; /* پنهان کردن دکمه‌ها در صفحه‌های کوچک */
+        display: none; 
     }
 
     .toggle-btn {
-        display: block; /* نمایش دکمه منو */
+        display: block; 
         background: transparent;
         border: none;
         color: #ffffff;
@@ -159,17 +162,17 @@ body {
     }
 
     .logo img {
-        width: 120px; /* کاهش اندازه لوگو */
+        width: 120px; 
     }
 }
 
-/* دکمه Toggle */
+/* Toggle */
 .toggle-btn {
-    display: none; /* پنهان کردن دکمه Toggle در صفحه‌های بزرگ */
+    display: none; 
 }
 
 @media (max-width: 768px) {
     .toggle-btn {
-        display: block; /* نمایش دکمه Toggle در صفحه‌های کوچک */
+        display: block;
     }
 }

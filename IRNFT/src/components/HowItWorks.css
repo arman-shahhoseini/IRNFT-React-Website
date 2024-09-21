@@ -64,18 +64,18 @@
 /* Media Queries */
 @media (max-width: 768px) {
   .how-it-works h2 {
-    font-size: 2rem; /* کاهش اندازه عنوان */
+    font-size: 2rem; 
   }
 
   .how-it-works p {
-    font-size: 1rem; /* کاهش اندازه متن */
+    font-size: 1rem; 
   }
 
   .steps {
-    padding: 10px 0; /* کاهش padding */
+    padding: 10px 0; 
   }
 
   .steps .step {
-    padding: 20px; /* کاهش padding داخلی */
+    padding: 20px; 
   }
 }
