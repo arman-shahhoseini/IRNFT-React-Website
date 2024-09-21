@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { HashRouter as Router, Route, Routes } from 'react-router-dom';
 import 'font-awesome/css/font-awesome.min.css';
 import Navbar from './components/Navbar';
 import LandingSection from './components/LandingSection';
