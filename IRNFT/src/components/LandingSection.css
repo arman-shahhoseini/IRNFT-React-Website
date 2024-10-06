@@ -202,9 +202,11 @@
 
 @media (max-width: 768px) {
   .landing {
-      flex-direction: column; 
-      padding: 40px 20px; 
-      height: auto; 
+    background-color: #4e4351; 
+    background-image: none; 
+    flex-direction: column; 
+    padding: 40px 20px; 
+    height: auto; 
   }
 
   .landing-content {
